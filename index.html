@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Teste Lenscope</title>
+  </head>
+  <body>
+    <header class="title">
+      <h1>Consulte sua Lente Ideal</h1>
+    </header>
+    <main class="conteudo">
+      <form action="">
+        <span class="lentes">Grau Esférico do Olho Esquerdo</span><br />
+        <input
+          type="number"
+          id="grauEsfEsquerdo"
+          placeholder="Digite seu grau"
+          step="0.25"
+          min="-15"
+          max="0"
+        /><br />
+        <span class="lentes">Grau Esférico do Olho Direito</span><br />
+        <input
+          type="number"
+          id="grauEsfDireito"
+          placeholder="Digite seu grau"
+          step="0.25"
+          min="-15"
+          max="0"
+        /><br />
+        <span class="lentes">Grau Cilindrico do Olho Esquerdo</span><br />
+        <input
+          type="number"
+          id="grauCiliEsquerdo"
+          placeholder="Digite seu grau"
+          step="0.25"
+          min="-15"
+          max="0"
+        /><br />
+        <span class="lentes">Grau Cilindrico do Olho Direito</span><br />
+        <input
+          type="number"
+          id="grauCiliDireito"
+          placeholder="Digite seu grau"
+          step="0.25"
+          min="-15"
+          max="0"
+        /><br />
+        <br />
+        <button type="submit" class="botao" onclick="retornar()">
+          Encontrar lente ideal
+        </button>
+      </form>
+    </main>
+    <div class="resposta" id="resultado"></div>
+  </body>
+</html>
